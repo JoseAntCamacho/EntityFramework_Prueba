@@ -10,6 +10,7 @@ namespace EntityFramework_Prueba
     {
         static void Main(string[] args)
         {
+            //
         }
     }
 }
