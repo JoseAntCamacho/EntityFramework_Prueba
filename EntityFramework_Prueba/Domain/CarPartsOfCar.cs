@@ -12,11 +12,9 @@ namespace EntityFramework_Prueba
     {
         [Key]
         [Column(Order =0)]
-        [ForeignKey("Car")]
         public Guid CarId { get; set; }
         [Key]
         [Column(Order = 1)]
-        [ForeignKey("PartsOfCar")]
         public Guid PartId { get; set; }        
 
         public virtual Car Car { get; set; }

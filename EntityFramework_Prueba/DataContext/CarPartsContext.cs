@@ -9,13 +9,16 @@ namespace EntityFramework_Prueba
 {
     public class CarPartsContext : DbContext
     {
-        public CarPartsContext() : base()
-        {
 
-        }
         public DbSet<Car> Cars { get; set; }
         public DbSet<PartsOfCar> PartsOfCars { get; set; }
         public DbSet<CarPartsOfCar> CarPartsOfCars { get; set; }
+
+        public CarPartsContext():base("DDBBCars")
+        {
+
+        }
+        
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
